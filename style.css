@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans&family=Poppins:wght@400;600&family=Rubik:wght@400;500;700&display=swap');
+/*********** RESET ***********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********** ROOT ***********/
+:root {
+/*********** Primary ***********/
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+/*********** Gradients ***********/
+--Light-slate-blue : hsl(252, 100%, 67%);
+--Light-royal-blue : hsl(241, 81%, 54%);
+/*********** Neutral ***********/
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+/*********** Body ***********/
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Pale-blue);
+}
+.card {
+    box-shadow: rgba(0, 0, 0, .20) 0 3px 8px;
+    width: 650px;
+    border-radius: 1.5em;
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.card .Result {
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: 1em;
+    background: linear-gradient(122deg, var(--Light-slate-blue), var(--Light-royal-blue));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+} 
+.card .Result h3 {
+    color: var(--Light-lavender);
+    margin-bottom: 1rem;
+}
+.Result .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Light-royal-blue), var(--Cobalt-blue));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Result .circle span {
+    color: var(--White);
+    font-weight: 900;
+    font-size: 4em;
+}
+.Result .circle .p-1 {
+    color: var(--Light-lavender);
+}
+.Result h1 {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 2em;
+}
+.Result .p-2 {
+    color: var(--Light-lavender);
+    font-weight: 500;
+}
+.summary {
+    width: 50%;
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;
+}
+.summary h2 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: var(--Dark-gray-blue);
+}
+.summary .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 100%, 67%, .2);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.image-icon {
+    display: flex;
+}
+.image-icon img {
+    margin-left: 5px;
+}
+.image-icon p{
+    margin-left: 8px;
+    color: var(--Light-red);
+}
+b {
+    margin-right: 7px;
+}
+.image-icon .row-1 .p-3 {
+    margin-right: 10px;
+}
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(39, 100%, 65%, .2);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.image-icon {
+    display: flex;
+}
+.image-icon img {
+    margin-left: 5px;
+}
+.image-icon .p-4 {
+    margin-left: 8px;
+    color: var(--Orangey-yellow);
+}
+b {
+    margin-right: 7px;
+}
+.image-icon .row-1 p {
+    margin-right: 10px;
+}
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(166, 100%, 37%, .2);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.image-icon {
+    display: flex;
+}
+.image-icon img {
+    margin-left: 5px;
+}
+.image-icon .p-5 {
+    margin-left: 8px;
+    color: var(--Green-teal);
+}
+b {
+    margin-right: 7px;
+}
+.image-icon .row-1 p {
+    margin-right: 10px;
+}
+.row-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(284, 85%, 45%, .2);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.image-icon {
+    display: flex;
+}
+.image-icon img {
+    margin-left: 5px;
+}
+.image-icon .p-6 {
+    margin-left: 8px;
+    color: var(--Cobalt-blue);
+}
+b {
+    margin-right: 7px;
+}
+.image-icon .row-1 p {
+    margin-right: 10px;
+}
+button {
+    padding: 1rem;
+    border-radius:2rem ;
+    border: none;
+    margin-top: auto;
+    background-color: var(--Dark-gray-blue);
+    color: var(--Pale-blue);
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(to bottom, var(--Light-royal-blue), var(--Cobalt-blue));
+
+}
